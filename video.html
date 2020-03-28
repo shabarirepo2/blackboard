@@ -1,0 +1,759 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Engineering Technology</title>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://humber.ca/el_dev/acc_bar/accbar.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+    <!-- fontawesome -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <style type="text/css">
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            padding-top: 30px;
+            height: 0;
+            overflow: hidden;
+        }
+
+        .video-container iframe,
+        .video-container object,
+        .video-container embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-full-bg" id="container1">
+        <div class="jumbotron" id="jumboMain">
+            <div class="container">
+                <div class="row justify-content-start mt-4">
+                    <h1 class="display-8 mb-4">Electrical Engineering Technology - ELEC 107</h1>
+                    <p class="lead">
+                        <img class="mainImg" src="./assets/images/headshot.PNG" alt="Professor">
+                    </p>
+                </div>
+                <div class="row justify-content-end">
+                    <h5 id="name">Professor John Doe</h5>
+                </div>
+                <div class="row justify-content-end">
+                    <a href="#" class="link">Message Me</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <h3 class="mb-4"><strong>Unit 1: Logic Fundamentals</strong></h3>
+            <hr class="my-4">
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 padding-0">
+                <div class="container" id="article_section">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog mw-100 w-75" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="teaser"></div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>
+            Return to <a href="./index.html">Unit 1</a>
+        </p>
+        
+        <div class="row">
+            <div class="row justify-content-start mb-5">
+                <h5 class="row justify-content-start mb-4 mt-4">
+                    COURSE VIDEOS
+                </h5>
+            </div>
+            <div class="row justify-content-start mb-5">
+                <div class="col-md-6">
+                    <iframe class="vid" src="https://www.youtube.com/embed/rniUq9yvdsE" alt="website prototype"
+                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    <hr class="my-4">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-4">
+                        Morse Code and Coding Information
+                    </h5>
+                    <p>
+                        The telegraph transfers the character and numbers by a switch. Two types of
+                        closing were used by an operator, short closing and long closing. Closing the
+                        switch for a short time was creating a short beep known as a dot. Closing the
+                        switch for a longer time was creating longer beep known as dash. All character
+                        coded by dot and dash, known as morse code.
+                    </p>
+                    <a class="nav-link" href=""
+                        onClick="showDetails(event, 'https://www.youtube.com/embed/rniUq9yvdsE', 'Video Modal')"
+                        data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-play"> Play Video</i>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-start mb-5">
+                <div class="col-md-6">
+                    <iframe class="vid" src="https://www.youtube.com/embed/Hq_PwJxyBEY" alt="website prototype"
+                        frameborder="0" style="margin-top: 5%;"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <hr class="my-4">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-4">
+                        ASCII Code
+                    </h5>
+                    <p>
+                        Capital letters small letters and symbols are coded too, these codes are called
+                        ASCII codes and they are known in computers. For example when you are sending a
+                        text on your cell phone, the text you enter, will be translated to these codes by
+                        your device, then they will be received as bunch of 01 and one by your friend and
+                        your friend device converts these codes to the character that you read.
+                    </p>
+                    <a class="nav-link" href=""
+                        onClick="showDetails(event, 'https://www.youtube.com/embed/Hq_PwJxyBEY', 'Video Modal')"
+                        data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-play"> Play Video</i>
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-start mb-5">
+                <div class="col-md-6">
+                    <iframe class="vid" src="https://www.youtube.com/embed/Hq_PwJxyBEY" alt="website prototype"
+                        frameborder="0" style="margin-top: 5%;"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                    </iframe>
+                    <hr class="my-4">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mb-4">
+                        Reading and Writing in Memory
+                    </h5>
+                    <p>
+                        When the switch inside the bit is closed it is 1 and when it is open it is 0. These
+                        switches are electrical switches, it means by applying energy they will be open or
+                        closed. Now to save your name inside the memory let's say start with 0011001001, whenever
+                        it is 1 the energy will be applied to switch and it will be closed and otherwise it goes
+                        open.
+                    </p>
+                    <a class="nav-link" href=""
+                        onClick="showDetails(event, 'https://www.youtube.com/embed/Hq_PwJxyBEY', 'Video Modal')"
+                        data-toggle="modal" data-target="#exampleModal">
+                        <i class="fa fa-play"> Play Video</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+    </div>
+
+    <footer class="page-footer font-small unique-color-dark">
+        <div class="container-fluid">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    &nbsp;
+                    <h6 class="text-uppercase font-weight-bold">Humber College</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p>Continuing Education department in the Faculty of Health Sciences and Wellness</p>
+                </div>
+                <!-- Grid column -->
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    &nbsp;
+                    <h6 class="text-uppercase font-weight-bold">Student Resources</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="https://humber.ca/myhumber/">MyHumber</a></p>
+                    <p><a href="http://learn.humber.ca/">Blackboard</a></p>
+                    <!-- <p><a href="https://library.humber.ca/">Library</a></p> -->
+                    <!-- <p><a href="http://humber.ca/student-life/">Student Life</a></p> -->
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    &nbsp;
+                    <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                    <hr class="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                    <p><a href="https://humber.ca/admissions/office-of-the-registrar/registration.html">Registration
+                            Office</a></p>
+                    <!-- <p><a href="https://healthsciences.humber.ca/">Faculty of Health Sciences and Wellness</a></p>
+                            <p><a href="https://healthsciences.humber.ca/explore/continuingeducation.html">Continuing Educaiton</a></p> -->
+                    <!--<p><a href="https://healthsciences.humber.ca/blackboard/resources-support-tools-policies/">Policies and Resources</a></p>-->
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Humber College
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script>
+        // notify
+        // function showSnack(message) {
+        //     var x = document.getElementById("snackbar");
+        //     x.innerText = message;
+        //     x.className = "show";
+        //     setTimeout(function () {
+        //         x.className = x.className.replace("show", "");
+        //     }, 3000);
+        // }
+
+        function showDetails(e, details, title) {
+            e.preventDefault();
+            console.log("inside show details");
+            var teaser = details;
+            console.log(teaser);
+            $("#teaser").html(`<div class="video-container"><iframe width="853" height="480" src="${details}" frameborder="0" allowfullscreen</iframe</div>`);
+            $("#exampleModalLabel").text('(Dynamic Title) - ' + title);
+
+            // var editor = $('#editor').ckeditor().editor;
+            // $("#editor").val( teaser );
+
+
+            // var editorElement = CKEDITOR.document.getById( 'editor' );
+            // CKEDITOR.instances.editor.setData(teaser);
+            // editorElement.setHtml('Hello world!\n\n' +
+            // 	'I\'m an instance of [url=https://ckeditor.com]CKEditor[/url].');
+            // CKEDITOR.instances.my_editor.insertHtml('<p>This is a new paragraph.</p>');
+        }
+
+        // function getUrlVars() {
+        //     var vars = {};
+        //     var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+        //         vars[key] = value;
+        //     });
+        //     return vars;
+        // }
+
+        // function fetchKb(nid, vid) {
+        //     // Fetch data
+        //     art = $.ajax({
+        //         type: 'POST',
+        //         url: './scripts/fetchData.php',
+        //         data: {
+        //             "nid": nid,
+        //             "vid": vid,
+        //             "sel": true
+        //         },
+        //         success: function (data) {
+        //             console.log("success after click");
+        //             //response( data.docs );
+        //             var article = JSON.parse(data);
+        //             console.log(article);
+        //             //return article;
+        //             showKbArticle(article.teaser, article.body, article.title, article.nid);
+        //         }
+        //     });
+
+        //     //return art;
+        // }
+
+        // function checkForStaticParams(fld1, fld2) {
+        //     var field1 = fld1; //'nid';
+        //     var field2 = fld2; //'vid';
+        //     var f1b, f2b = false;
+        //     var url = window.location.href;
+
+        //     // check for nid exists in url param
+        //     if (url.indexOf('?' + field1 + '=') != -1)
+        //         //return true;
+        //         f1b = true;
+        //     else if (url.indexOf('&' + field1 + '=') != -1)
+        //         //return true;
+        //         f1b = true;
+
+        //     // check for vid exists in url param
+        //     if (url.indexOf('?' + field2 + '=') != -1)
+        //         //return true;
+        //         f2b = true;
+        //     else if (url.indexOf('&' + field2 + '=') != -1)
+        //         //return true;
+        //         f2b = true;
+
+        //     return (f1b && f2b) ? true : false
+        // }
+
+        // var g_nid;
+        // var g_body;
+        // var g_teaser;
+        // var g_title;
+
+        // function removeBulkHidden() {
+        //     $('#art_bulk').removeClass('hidden');
+        // }
+        // editor
+        // initSample();
+        // hide the kb section at page load
+        $(document).ready(function () {
+            console.log("ready!");
+            // $("#kb_section").hide();
+            // $("#kb_create_section").hide();
+            // $("#article_section").show();
+            // $("#save_html").hide();
+
+            // removeBulkHidden();
+
+            // // if the url has parameters to go to an article then fetch and display article
+            // let hasParams = checkForStaticParams("nid", "vid");
+            // if (hasParams) {
+            //     console.log(hasParams + " both nid and vid exist, fetching article");
+
+            //     n_id = getUrlVars()["nid"];
+            //     v_id = getUrlVars()["vid"];
+
+            //     fetchKb(n_id, v_id);
+            // }
+
+
+            // auto complete list
+            // $(function () {
+
+            //     // Single Select
+            //     $("#autocomplete").autocomplete({
+            //         source: function (request, response) {
+            //             // Fetch data
+            //             $.ajax({
+            //                 url: "http://systemstest.centrilogic.com:49160/api/getKbs",
+            //                 type: 'post',
+            //                 contentType: 'application/json',
+            //                 dataType: "json",
+            //                 data: JSON.stringify({
+            //                     "title": request.term
+            //                 }),
+            //                 success: function (data) {
+            //                     //response( data.docs );                            
+            //                     console.log(data);
+            //                     response($.map(data.docs, function (value,
+            //                     key) {
+            //                         //console.log(key);
+            //                         return {
+            //                             label: value.title,
+            //                             value: value
+            //                         };
+            //                     }));
+            //                 }
+            //             });
+            //         },
+            //         select: function (event, ui) {
+            //             console.log("inside select part");
+            //             console.log(ui.item + ", " + ui.item.value.nid);
+            //             // Set selection
+            //             $('#autocomplete').val(ui.item.value
+            //             .title); // display the selected text
+            //             //$('#selectuser_id').val(ui.item.value); // save selected id to input
+            //             // Fetch data
+            //             $.ajax({
+            //                 type: 'POST',
+            //                 url: './scripts/fetchData.php',
+            //                 data: {
+            //                     "nid": ui.item.value.nid,
+            //                     "vid": ui.item.value.vid,
+            //                     "sel": true
+            //                 },
+            //                 success: function (data) {
+            //                     console.log("success after click");
+            //                     //response( data.docs );
+            //                     var article = JSON.parse(data);
+            //                     console.log(article);
+            //                     showKbArticle(article.teaser, article.body,
+            //                         article.title, article.nid);
+            //                 }
+            //             });
+
+            //             return false;
+            //         }
+            //     });
+
+            //     // Multiple select
+            //     /*$( "#multi_autocomplete" ).autocomplete({
+            //         source: function( request, response ) {
+                                
+            //             var searchText = extractLast(request.term);
+            //             $.ajax({
+            //                 url: "fetchData.php",
+            //                 type: 'post',
+            //                 dataType: "json",
+            //                 data: {
+            //                 search: searchText
+            //                 },
+            //                 success: function( data ) {
+            //                 response( data );
+            //                 }
+            //             });
+            //         },
+            //         select: function( event, ui ) {
+            //             var terms = split( $('#multi_autocomplete').val() );
+                                
+            //             terms.pop();
+                                
+            //             terms.push( ui.item.label );
+                                
+            //             terms.push( "" );
+            //             $('#multi_autocomplete').val(terms.join( ", " ));
+    
+            //             // Id
+            //             terms = split( $('#selectuser_ids').val() );
+                                
+            //             terms.pop();
+                                
+            //             terms.push( ui.item.value );
+                                
+            //             terms.push( "" );
+            //             $('#selectuser_ids').val(terms.join( ", " ));
+    
+            //             return false;
+            //             }
+                            
+            //         });*/
+
+            // });
+
+            // function split(val) {
+            //     return val.split(/,\s*/);
+            // }
+
+            // function extractLast(term) {
+            //     return split(term).pop();
+            // }
+        });
+        // add the master title
+        // $("#master_title").text("Articles");
+        // $("#edit_switch").text("Edit");
+
+        // // if create kb link is clicked
+        // $('.create_kb').click(function (event) {
+        //     // Don't follow the link
+        //     event.preventDefault();
+        //     location.href.replace(/&?page=([^&]$|[^&]*)/i, "");
+
+        //     // display the kb create section
+        //     $("#master_title").text("Create Knowledge Base Article");
+
+        //     $("#kb_section").hide();
+        //     $("#article_section").hide();
+        //     $('#kb_body_create').show();
+        //     $("#kb_create_section").show();
+        // });
+
+        // // if cust link is clicked
+        // $('.cust').click(function (event) {
+        //     // Don't follow the link
+        //     event.preventDefault();
+
+        //     // if clicking from ops to customer then go back to first page, else SPA display
+        //     let hasParams = checkForStaticParams("page", "type");
+        //     /*if(hasParams){
+        //         console.log("is paging through");
+        //         var tpe = getUrlVars()["type"];
+        //         if(tpe === "ops"){
+        //             console.log("coming from ops");
+        //             window.location.href = window.location.host + "?page=1&type=cust";
+        //         }
+        //     }*/
+
+        //     location.href.replace(/&?page=([^&]$|[^&]*)/i, "");
+        //     var customer_articles = document.getElementById("cust_articles");
+        //     var operations_articles = document.getElementById("ops_articles");
+
+        //     if (!operations_articles.classList.contains("d-none"))
+        //         operations_articles.classList.add("d-none");
+
+        //     customer_articles.classList.remove("d-none");
+
+        //     $("#master_title").text("Articles");
+        //     $("#edit_switch").text("Edit");
+        //     $('#kb_body_edit').hide();
+        //     $("#kb_body_text").show();
+
+        //     $("#kb_section").hide();
+
+        //     $('#kb_body_create').hide();
+        //     $("#kb_create_section").hide();
+
+        //     $("#article_section").show();
+        //     // Log the clicked element in the console
+        //     // console.log(event.target);
+        // });
+
+        // // if ops link is clicked
+        // $('.ops').click(function (event) {
+        //     // Don't follow the link
+        //     event.preventDefault();
+
+        //     // if clicking from customer to ops then go back to first page, else SPA display
+        //     let hasParams = checkForStaticParams("page", "type");
+        //     /*if(hasParams){
+        //         console.log("is paging through");
+        //         var tpe = getUrlVars()["type"];
+        //         if(tpe === "cust"){
+        //             console.log("coming from cust");
+        //             window.location.href = window.location.href + "?page=1&type=ops";
+        //         }
+        //     }*/
+
+        //     // location.href.replace(/&?page=([^&]$|[^&]*)/i, "");
+        //     var customer_articles = document.getElementById("cust_articles");
+        //     var operations_articles = document.getElementById("ops_articles");
+
+        //     if (!customer_articles.classList.contains("d-none"))
+        //         customer_articles.classList.add("d-none");
+
+        //     operations_articles.classList.remove("d-none");
+
+        //     $("#master_title").text("Articles");
+        //     $("#edit_switch").text("Edit");
+        //     $('#kb_body_edit').hide();
+        //     $("#kb_body_text").show();
+
+        //     $("#kb_section").hide();
+
+        //     $('#kb_body_create').hide();
+        //     $("#kb_create_section").hide();
+
+        //     $("#article_section").show();
+        //     // Log the clicked element in the console
+        //     // console.log(event.target);
+        // });
+
+        // // if save butto is clicked
+        // $('.save_html').click(function (event) {
+        //     // Don't follow the link
+        //     event.preventDefault();
+
+        //     console.log(g_nid);
+        //     var body_data = CKEDITOR.instances.editor.getData();
+        //     console.log(body_data);
+        //     console.log(g_nid);
+
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: './scripts/save.php',
+        //         data: {
+        //             "body": body_data,
+        //             "title": g_title,
+        //             "nid": g_nid,
+        //             "teaser": g_teaser
+        //         },
+        //         success: function (datas) {
+        //             //alert("Edit successful for " + g_title );
+        //             showSnack("Successfully edited " + g_title + ", Reloading Articles...");
+        //             //showSnack("Reloading Articles...");
+        //             //$("#master_title").text(title);
+        //             $("#kb_body_text").html(body_data);
+        //             $("#edit_switch").click();
+        //             //CKEDITOR.instances.editor.setData(body);
+        //             //location.reload(true);
+
+        //             setTimeout(function () {
+        //                 location.href = "index.php";
+        //             }, 2500);
+        //         }
+        //     });
+        // });
+
+        // // if create button is clicked
+        // $('.save_new_kb').click(function (event) {
+        //     // Don't follow the link
+        //     event.preventDefault();
+
+
+        //     //console.log(g_nid);
+        //     var body_data = CKEDITOR.instances.editor1.getData();
+        //     var article_title = $("#article_title").val();
+        //     var article_type = $("#article_type").val();
+
+        //     // create teaser snapshot
+        //     var dom = document.createElement("DIV");
+        //     dom.innerHTML = body_data;
+        //     var plain_text = (dom.textContent || dom.innerText);
+
+        //     var article_teaser = plain_text.substr(0, 150);
+
+        //     //console.log(body_data);
+        //     //console.log(article_title);
+        //     //console.log(article_type);
+        //     //console.log(article_teaser);
+
+        //     if (body_data === "" || article_title === "") {
+        //         return showSnack("Sorry! Can't save empty KB, please add Title and Body.");
+        //     }
+
+        //     $.ajax({
+        //         type: 'POST',
+        //         url: './scripts/create.php',
+        //         data: {
+        //             "body": body_data,
+        //             "title": article_title,
+        //             //"nid": g_nid,
+        //             "teaser": article_teaser,
+        //             "type": article_type
+        //         },
+        //         success: function (datas) {
+        //             //alert("Edit successful for " + g_title );
+        //             //alert(datas);
+        //             showSnack("Successfully created KB article, reloading articles.. ");
+        //             //$("#master_title").text(title);
+        //             //$("#kb_body_text").html(body_data);
+        //             //$("#edit_switch").click();
+        //             //CKEDITOR.instances.editor.setData(body);
+        //             setTimeout(function () {
+        //                 location.reload(true);
+        //             }, 1500);
+        //         }
+        //     });
+        // });
+
+        // $("#edit_switch").click(function (event) {
+        //     event.preventDefault();
+        //     // display the kb section
+        //     if ($("#edit_switch").text() === "Edit") {
+        //         $("#edit_switch").text("Quit Edit")
+
+        //         $('#kb_body_edit').show();
+        //         $("#kb_body_text").hide();
+        //         $("#save_html").show();
+        //     } else {
+        //         $("#edit_switch").text("Edit");
+        //         $('#kb_body_edit').hide();
+        //         $("#kb_body_text").show();
+        //         $("#save_html").hide();
+        //     }
+        // });
+
+
+        // $(".back_to_articles").click(function (event) {
+        //     event.preventDefault();
+        //     // display the kb section
+        //     $("#master_title").text("Articles");
+        //     $("#edit_switch").text("Edit");
+        //     $('#kb_body_edit').hide();
+        //     $("#kb_body_text").show();
+
+        //     $("#kb_section").hide();
+
+        //     $('#kb_body_create').hide();
+        //     $("#kb_create_section").hide();
+
+        //     $("#article_section").show();
+        // });
+
+        // function showKbArticle(teaser, body, title, nid) {
+        //     g_nid = nid;
+        //     g_body = body;
+        //     g_teaser = teaser;
+        //     g_title = title;
+
+        //     $("#master_title").text(title);
+        //     $("#kb_body_text").html(body);
+        //     CKEDITOR.instances.editor.setData(body);
+
+        //     // display the kb section
+        //     $("#edit_switch").text("Edit")
+        //     $("#article_section").hide();
+        //     $("#kb_section").show();
+
+        //     $('#kb_body_edit').hide();
+        //     $("#kb_body_text").show();
+
+        //     console.log(body);
+        // }
+
+        // $.urlParam = function (name) {
+        //     var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+        //     console.log(results);
+        //     return results[1] || 0;
+        // }
+
+        // if ($.urlParam('type') !== 0) {
+        //     console.log("type is in url");
+
+        //     var type = getUrlVars("type");
+        //     console.log(type.type);
+        //     if (type.type === 'ops') {
+        //         var operations_articles = document.getElementById("ops_articles");
+        //         operations_articles.classList.remove("d-none");
+
+        //         // $("#master_title").text("Articles");
+        //         // $("#edit_switch").text("Edit");
+        //         // $('#kb_body_edit').hide();
+        //         // $("#kb_body_text").show();
+
+        //         // $("#kb_section").hide();
+        //         // $("#article_section").show();
+        //     } else {
+        //         var customer_articles = document.getElementById("cust_articles");
+        //         customer_articles.classList.remove("d-none");
+
+        //         // $("#master_title").text("Articles");
+        //         // $("#edit_switch").text("Edit");
+        //         // $('#kb_body_edit').hide();
+        //         // $("#kb_body_text").show();
+
+        //         // $("#kb_section").hide();
+        //         // $("#article_section").show();
+        //     }
+        // }
+    </script>
+
+</body>
+
+</html>

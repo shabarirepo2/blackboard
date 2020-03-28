@@ -1,0 +1,31 @@
+body {
+    overflow-x: hidden;
+}
+.link {
+    color: white;
+    margin-right: 45px;
+}
+.caption {
+    text-align: center;
+}
+.mainImg {
+    margin-left: 195px;
+    height: 110px;
+    width: 110px;
+}
+#jumboMain {
+    background-color: navy;
+    color: white;
+}
+#vid {
+    object-fit: cover;
+    align-content: center;
+    width: 100px; 
+    height: 100px;
+    margin: 50px 0px 40px 125px;
+}
+#syl {
+    margin-left: 90px;
+}
+
+
